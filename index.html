@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="passwordGenerator.css" />
+    <title>passwordGenerator</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Generate a</h1>
+      <span>random password</span>
+    </div>
+    <h3>Never use an insecure password again.</h3>
+    <form action="" method="post" class="form">
+      <div class="info">
+        <label for="password-length">Password length</label>
+        <input
+          type="number"
+          name="password-length"
+          id="password-length"
+          min="4"
+          max="20"
+          value="20"
+        />
+      </div>
+
+      <div class="info">
+        <label for="words">Do you want WORDS in your password</label>
+        <input type="checkbox" name="words" id="words" />
+      </div>
+
+      <div class="info">
+        <label for="number">Do you want NUMBERS in your password</label>
+        <input type="checkbox" name="number" id="number" />
+      </div>
+
+      <div class="info">
+        <label for="symbols">Do you want SYMBOLS in your password</label>
+        <input type="checkbox" name="symbols" id="symbols" />
+      </div>
+    </form>
+    <button id="Password-el">Generate passwords</button>
+    <hr />
+    <div id="buttons">
+      <button class="generatePassword" id="result 1"></button>
+      <button class="generatePassword" id="result 2"></button>
+    </div>
+    <p>Click to copy to clipboard</p>
+    <script src="passwordGenerator.js"></script>
+  </body>
+</html>
